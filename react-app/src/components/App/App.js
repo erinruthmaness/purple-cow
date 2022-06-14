@@ -12,10 +12,16 @@ const App = () => {
     };
 
     return (
-        <div className="App">
-            <Button text="Reveal Hit Count" onClick={clickHandler} />
-            {isCountRevealed && <span>The count is {count}!</span>}
-        </div>
+        <main className="card">
+            <Button text={isCountRevealed ? "Hide Hit Count" : "Reveal Hit Count"} onClick={clickHandler} />
+            {isCountRevealed ? (
+                <p className="content">
+                    The count is: <span className={"caps"}>{count}</span>
+                </p>
+            ) : (
+                <div className="placeholder" />
+            )}
+        </main>
     );
 };
 
