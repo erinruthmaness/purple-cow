@@ -1,0 +1,6 @@
+services:
+  frontend:
+    image: 15d3bab01733
+    # build: ./react-app
+    ports:
+     - "3000:3000"
