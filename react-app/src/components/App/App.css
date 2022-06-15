@@ -1,14 +1,17 @@
 .card {
-  min-width: 80%;
-  aspect-ratio: 2 / 1;
-  margin-bottom: 2rem;
+  margin-top: 1em;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background-color: rgba(var(--medSkyRGB), .25);
-  display: grid;
-  place-content: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .content, .placeholder {
+  cursor: auto;
   height: 2em;
   margin: 0.5em;
 }
@@ -22,4 +25,18 @@
 
 .content span {
   margin-left: .25rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .card {
+    aspect-ratio: 2 / 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    max-width: 80%;
+    margin: 2em auto;
+    aspect-ratio: 3 / 1;
+  }
 }

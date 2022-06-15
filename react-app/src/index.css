@@ -3,8 +3,8 @@
     --lightPurpleRGB: 245, 156, 150;
     --medPurple: #b32c4c;
     --medPurpleRGB: 179, 44, 76;
-    --darkPurple: #36151d;
-    --darkPurpleRGB: 54, 21, 29;
+    --darkPurple: #1F0913;
+    --darkPurpleRGB: 31, 9, 19;
     --medSky: #447c9a;
     --medSkyRGB: 68, 124, 154;
     --lightSky: #b4c2cb;
@@ -22,8 +22,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
-    display: grid;
-    place-items: center;
+    padding: 1rem;
 }
 
 .caps {
@@ -33,4 +32,10 @@
     font-variant: small-caps;
     font-weight: 500;
     letter-spacing: -.0125em;
+}
+
+@media only screen and (min-width: 600px) {
+    #root {
+        padding: 2rem;
+    }
 }
